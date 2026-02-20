@@ -3,7 +3,7 @@ If the maximum is an even number, you win and if it is odd, your friend wins.
  */
 import java.lang.*;
 import java.util.*;
-class WorkAtTech
+class WINORLOSE
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
