@@ -1,0 +1,32 @@
+/*This Program enables to store the integer data types in the Array and Find the highest ,lowest amrk and average  */
+import java.util.Scanner;
+public class Teacher{
+    public static void main(String []Args){
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Enter the  Number of Student:");
+        int n =sc.nextInt();
+        int mark []= new int [n];
+        for (int i=0;i<n;i++){
+            System.out.println("Enter marks :");
+            mark[i] =sc.nextInt();
+        } 
+        int highest =mark[0];
+        int lowest =mark[0];
+        int sum = 0;
+        for (int i=0;i<n;i++){
+            if(mark[i]>highest){
+                highest = mark[i];
+            }
+            if (mark[i] < lowest){
+                lowest =mark[i];
+            }
+            sum += mark[i];
+        }
+        double average = sum /n;
+        System.out.println("Highest mark:"+highest);
+        System.out.println("Lowest mark:"+lowest);
+        System.out.println("Average mark:"+average);
+        sc.close();
+        
+        }
+}
