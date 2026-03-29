@@ -1,0 +1,33 @@
+/*This program is build for shop by inputing the number of item and amount of the specfic item and then calculate the dicount
+of the specific item bought */
+import java.util.Scanner;
+public class Shop {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of items: ");
+        int n = sc.nextInt();
+        sc.nextLine();
+        double total = 0;
+        for (int i = 0; i < n; i++) {
+            System.out.print("Enter item " + (i + 1) + " name: ");
+            String name = sc.nextLine();
+            System.out.print("Enter item " + (i + 1) + " price: ");
+            double price = sc.nextDouble();
+            sc.nextLine();
+            System.out.printf("%-10s : ₹%.1f%n", name, price);
+            total += price;
+        }
+        System.out.printf("Total      : ₹%.1f%n", total);
+        if (total > 500) {
+            double discount = total * 0.10;
+            double finalAmount = total - discount;
+            System.out.printf("Discount   : ₹%.1f%n", discount);
+            System.out.printf("Final Amount : ₹%.1f%n", finalAmount);
+        } else {
+            System.out.println("No discount applied.");
+            System.out.printf("Final Amount : ₹%.1f%n", total);
+        }
+
+        sc.close();
+    }
+}
