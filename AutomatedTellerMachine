@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class AutomatedTellerMachine {
+    public static void main(String  [] Args){
+        System.out.println("Enter Your name:");
+        char name = sc.nextLine();
+        System.out.println("Enter your Account balance:");
+        int balance = sc.nextInt();
+        System.out.println("Enter the choice:");
+        int choice = sc.nextInt();
+        switch (choice){
+            case 1:
+                System.out.println("View Balance "+balance);
+                break;
+            case 2:
+                System.out.println("Enter Withdraw Amount:");
+                int amount = sc.nextInt();
+                if (balance >amount){
+                int bal2 = balance - amount ;
+                System.out .println("With drawed is:"+bal2);
+                }
+                else {
+                    System.out.println("Invalid balance ");
+                }
+            case 3:
+                System.out.println("Exit ");
+                break;
+            default:
+                    System.out.println("Invalid Choice");
+            
+
+        } 
+    }
+}
