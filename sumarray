@@ -1,0 +1,12 @@
+import java.util.Scanner;
+import java.util.Arrays;
+class sumarray{
+    public static void main(String [] args){
+int a [] = {12,34,23,232};
+int tot = 0;
+for(int i = 0;i<a.length;i++){
+    tot += a[i];
+    }
+    System.out.println(tot);
+}
+}
