@@ -1,0 +1,23 @@
+import java.util.*;
+public class LoanEligibility {
+    public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the salary:");
+int salary = sc.nextInt();
+System.out.println("Enter the Cibil scoure:");
+int cibil = sc.nextInt();
+if(salary >= 45000){
+    if (cibil >= 750){
+        System.out.println("Your elible for Loan ");
+    }
+    else if(cibil >= 650 && cibil <750){
+        System.out.println("Your elible for Loan with high interest rate");
+        }
+        
+    }
+else {
+        System.out.println("Your not elible for Loan");
+    }
+}
+}
+    
