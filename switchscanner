@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class SwitchCaseExample {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the fruit:");
+        String fruit = sc.nextLine();
+
+        switch (fruit) {
+            case "Apple":
+                System.out.println("You chose Apple");
+                break;
+            case "Pineapple":
+                System.out.println("You chose Pineapple");
+                break;
+            case "Strawberry":
+                System.out.println("You chose Strawberry");
+                break;
+            default:
+                System.out.println("You chose nothing");
+        }
+
+        sc.close();
+    }
+}
