@@ -1,0 +1,11 @@
+import java.util.Arrays; 
+
+class arraycheck {
+    public static void main(String[] args) {
+        int a[] = {21, 23, 4, 3, 3};
+        int b[] = {1, 2, 23, 4};
+        System.out.println(Arrays.equals(a, b));
+        Arrays.sort(a); 
+        System.out.println(Arrays.binarySearch(a, 23)); 
+    }
+}
