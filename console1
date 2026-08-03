@@ -1,0 +1,9 @@
+import java.io.*;
+import java.util.*;
+public class console1{
+    public static void main(String args []){
+        Console con = System.console();
+        String name = con.readLine("Enter your name:");
+        System.out.println(name);
+    }
+}
