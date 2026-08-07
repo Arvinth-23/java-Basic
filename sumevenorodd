@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int n = 2;
+        int m = 2;
+        int a = m + n;
+        if(a %2 ==0){
+            System.out.println("even");
+        }
+        else{
+            System.out.println("odd");
+        }
+    }
+}
