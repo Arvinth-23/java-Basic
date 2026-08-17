@@ -1,0 +1,41 @@
+import java.util.*;
+public class area {
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter you Choice");
+        String n = sc.nextLine();
+        switch(n){
+        case "circle":
+            System.out.println("Enter the radius of circle:");
+            int r = sc.nextInt();
+            double circle = 3.14*r*r;
+            System.out.println("Area of circle:"+circle);
+            break;
+        case "square":
+            System.out.println("Enter the side of Square:");
+            int s = sc.nextInt();
+            int square = s * s;
+            System.out.println("Area of Square:"+square);
+            break;
+        case "rectangle":
+            System.out.println("Enter the breadth:");
+            int b = sc.nextInt();
+            System.out.println("Enter the height:");
+            int h = sc.nextInt();
+            int rectangle = h * b;
+            System.out.println("Area of Rectangle:"+rectangle);    
+            break;
+        case "triangle":
+            System.out.println("Enter the breadth:");
+            int x = sc.nextInt();
+            System.out.println("Enter the height:");
+            int t = sc.nextInt();
+            double triangle = 0.5 * x * t;
+            System.out.println("Area of Triangle:"+triangle);    
+            break;
+            default:
+                System.out.println("Invalid Choice");
+        }
+    }
+    
+}
