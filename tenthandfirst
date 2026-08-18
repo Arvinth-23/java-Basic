@@ -1,0 +1,21 @@
+import java.util.*;
+public class tenthandfirst {
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int x = sc.nextInt();
+        int z = x%10;
+        int a = 0;
+        System.out.println(z);
+        while(x != 0){
+            if(x<10){
+               a = a+x; 
+            }
+            x = x/10;
+
+        }
+        System.out.println(a);
+        
+    }
+    
+}
