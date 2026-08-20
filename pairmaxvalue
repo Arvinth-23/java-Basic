@@ -1,0 +1,15 @@
+import java.util.*;
+public class pairmaxvalue {
+    public static void main(String []args){
+        int n = 254643;
+        int[] a = new int[6];
+
+    for (int i = 5; i >= 0; i--) {
+        a[i] = n % 10;
+        n = n / 10;
+        
+    }
+        Arrays.sort(a);
+        System.out.println("pair with maximum value: " + a[a.length-2] + " " + a[a.length-1]);
+    }
+}
