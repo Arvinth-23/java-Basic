@@ -1,0 +1,10 @@
+public class cubeandsquare {
+    public static void main(String[] args) {
+        int num = 5;
+        int cube = num * num * num;
+        int square = num * num;
+        System.out.println("Cube of " + num + " is: " + cube);
+        System.out.println("Square of " + num + " is: " + square);
+    }
+    
+}
