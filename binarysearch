@@ -1,0 +1,19 @@
+public class binarysearch {
+    public static void main(String args[]) {
+        int a[] = {5, 12, 25, 34, 56, 67, 78};
+        int key = 56;
+        int low = 0;
+        int high = a.length - 1;
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (a[mid] == key) {
+                System.out.println("Element found at index: " + mid);
+                break;
+            } else if (a[mid] < key) {
+                low = mid + 1;
+            } else {
+                high = mid - 1;
+            }
+        }
+    }
+}
