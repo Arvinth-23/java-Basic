@@ -1,6 +1,9 @@
+import java.util.*;
 class Palindrome {
     public static void main(String[] args) {
-        int num = 121;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Give Me The Number:");
+        int num = sc.nextInt();
         int temp = num;
         int rev = 0;
 
