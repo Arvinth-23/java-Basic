@@ -1,0 +1,16 @@
+import java.util.*;
+public class stringcount {
+    public static void main(String []arg){
+        Scanner cla = new Scanner(System.in);
+        System.out.println("Enter the word:");
+        String word = cla.nextLine();
+        System.out.println(word);
+        int count = 0;
+        for(char c : word.toCharArray()){
+            count ++;
+
+        }
+        System.out.println(count);
+    }
+    
+}
