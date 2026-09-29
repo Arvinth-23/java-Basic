@@ -1,0 +1,21 @@
+import java.util.*;
+class repeatationreover {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int temp = n;
+        while (temp > 0) {
+            int digit = temp % 10;
+            int x = n;
+            int count = 0;
+            while (x > 0) {
+                if (x % 10 == digit)
+                    count++;
+                x = x / 10;
+            }
+            if (count <= 2)
+                System.out.print(digit);
+            temp = temp / 10;
+        }
+    }
+}
