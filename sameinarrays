@@ -1,0 +1,9 @@
+/*This program is used to check that two arrays has same number of element  */
+import java.util.Arrays;
+public class sameinarrrays{
+    public static void main(String [] args){
+        String b [] = {"san","college"};
+        String c [] = {"san","college"};
+        System.out.println(Arrays.equals(b,c));
+    }
+}
